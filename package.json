@@ -4,6 +4,6 @@
   "main": "app.js",
   "license": "MIT",
   "dependencies": {
-    "got": "^10.0.0"
+    "got": "^11.0.0"
   }
 }
