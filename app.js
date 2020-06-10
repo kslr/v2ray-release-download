@@ -10,6 +10,6 @@ const p = require('path');
         let download_url = element.browser_download_url;
         console.info(`${name}  ${download_url}`);
 
-        got.stream(download_url).pipe(fs.createWriteStream(p.resolve(__dirname, `data/${name}`)));
+        await got.stream(download_url).pipe(fs.createWriteStream(p.resolve(__dirname, `data/${name}`)));
     })
 })();
